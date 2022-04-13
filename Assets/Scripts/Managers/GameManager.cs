@@ -91,6 +91,11 @@ public class GameManager : Singleton<GameManager>
         sceneLoader.Load(sceneName);
     }
 
+    public void onPlayerTurn()
+    {
+
+    }
+
     public void OnPlayerDead()
     {
         gameData.intData["Lives"]--;
