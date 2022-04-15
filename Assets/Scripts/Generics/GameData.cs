@@ -18,7 +18,6 @@ public class GameData : ScriptableObject
 			this.value = value;
 		}
 	}
-	//this is a test push
 
 	[System.Serializable]
 	public class KeyValuePairList<T>

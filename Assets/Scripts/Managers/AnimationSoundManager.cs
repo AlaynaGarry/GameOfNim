@@ -6,7 +6,6 @@ public class AnimationSoundManager : MonoBehaviour
 {
     public void PlaySound(AudioClip clip)
     {
-        //its a meeee, not marioooo - Alexis
         AudioManager.Instance.PlaySFX(clip);
     }
 }
