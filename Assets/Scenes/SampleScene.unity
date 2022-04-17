@@ -758,10 +758,6 @@ PrefabInstance:
       value: Populate
       objectReference: {fileID: 0}
     - target: {fileID: 2589245417246408636, guid: 2db9f204a92a3724296bf1c8a6476a11, type: 3}
-      propertyPath: rows
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2589245417246408636, guid: 2db9f204a92a3724296bf1c8a6476a11, type: 3}
       propertyPath: Board
       value: 
       objectReference: {fileID: 854989209}
