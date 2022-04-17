@@ -21,11 +21,17 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] public AudioClip winMusicClip;
     [SerializeField] public AudioClip loseMusicClip;
     [SerializeField] SceneLoader sceneLoader;
+    [SerializeField] Text rowText;
+    [SerializeField] Text TopCountText;
     public GameData gameData;
 
     public string pOneName { get; set; }
     public string pTwoName { get; set; }
     public bool whosTurn { get; set; } // false = Player One : true = Player Two
+
+    private static  int rows;
+    private static int topRowCount = 3;
+
 
     public State state = State.TITLE;
 
@@ -82,5 +88,19 @@ public class GameManager : Singleton<GameManager>
     void OnSceneWasLoaded(Scene current, Scene next)
     {
         InitScene();
+    }
+
+    public void EndTurn()
+    {
+        whosTurn = !whosTurn;
+        Tree.activeRow = null;
+    }
+
+    public static void ChangeDifficulty(int inRows, int inTopRowCount)
+    {
+        rows = inRows;
+        topRowCount = inTopRowCount;
+        //rowText.text = rows.ToString();
+        //TopCountText.text = topRowCount.ToString();
     }
 }
