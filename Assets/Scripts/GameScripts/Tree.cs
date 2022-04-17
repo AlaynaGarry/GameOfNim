@@ -9,7 +9,7 @@ public class Tree : MonoBehaviour
     [SerializeField] GameObject RowForBoard;
 
     public int rows;
-    public int TopRowCount = 3;
+    public int TopRowCount;
     public static int? activeRow;
 
     static Dictionary<int, List<GameObject>> board = new Dictionary<int, List<GameObject>>();
