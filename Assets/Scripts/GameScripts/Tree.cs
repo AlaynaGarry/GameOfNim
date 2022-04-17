@@ -9,7 +9,7 @@ public class Tree : MonoBehaviour
     [SerializeField] GameObject RowForBoard;
 
     public int rows;
-    public int TopRowCount;
+    public int topRowCount;
     public static int? activeRow;
 
     static Dictionary<int, List<GameObject>> board = new Dictionary<int, List<GameObject>>();
@@ -36,13 +36,16 @@ public class Tree : MonoBehaviour
         }
     }
 
-    public void PopulateTree()
+    public void PopulateTree(int rows, int topRowCount)
     {
+        this.rows = rows;
+        this.topRowCount = topRowCount;
+
         for (int i = 0; i < rows; i++)
         {
             GameObject row = Instantiate(RowForBoard, Board.transform);
             List<GameObject> newList = new List<GameObject> { };
-            for (int j = 0; j < TopRowCount + (2 * i); j++)
+            for (int j = 0; j < topRowCount + (2 * i); j++)
             {
                 GameObject go = Instantiate(gamePiece, row.transform);
                 go.GetComponent<GamePiece>().Row = i;

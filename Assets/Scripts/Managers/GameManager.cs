@@ -27,9 +27,9 @@ public class GameManager : Singleton<GameManager>
 
     public string pOneName { get; set; }
     public string pTwoName { get; set; }
-    public bool whosTurn { get; set; } // false = Player One : true = Player Two
+    public static bool whosTurn { get; set; } // false = Player One : true = Player Two
 
-    private static  int rows;
+    private static int rows;
     private static int topRowCount = 3;
 
 
@@ -62,6 +62,8 @@ public class GameManager : Singleton<GameManager>
             if(sceneDescriptor.player) Instantiate(sceneDescriptor.player, sceneDescriptor.playerSpawn.position, sceneDescriptor.playerSpawn.rotation);
             if (sceneDescriptor.music) AudioManager.Instance.PlayMusic(sceneDescriptor.music);
         }
+
+        if (currentSceneName == "GameScene") GameObject.Find("Board").GetComponent<Tree>().PopulateTree(rows, topRowCount);
     }
 
     private void Update()
@@ -81,8 +83,8 @@ public class GameManager : Singleton<GameManager>
 
     public void OnLoadScene(string sceneName)
     {
-        sceneLoader.Load(sceneName);
         currentSceneName = sceneName;
+        sceneLoader.Load(sceneName);
     }
 
     void OnSceneWasLoaded(Scene current, Scene next)
@@ -90,7 +92,7 @@ public class GameManager : Singleton<GameManager>
         InitScene();
     }
 
-    public void EndTurn()
+    public static void EndTurn()
     {
         whosTurn = !whosTurn;
         Tree.activeRow = null;
