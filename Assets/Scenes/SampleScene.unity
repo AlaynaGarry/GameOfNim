@@ -610,6 +610,7 @@ GameObject:
   m_Component:
   - component: {fileID: 854989210}
   - component: {fileID: 854989211}
+  - component: {fileID: 854989212}
   m_Layer: 5
   m_Name: Board
   m_TagString: Untagged
@@ -662,6 +663,23 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &854989212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854989209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ead2b60bf750d94681617a5cc4a938b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gamePiece: {fileID: 2009669299722537701, guid: 382459a314976374fa45b7f39d7a31a3, type: 3}
+  Board: {fileID: 854989209}
+  RowForBoard: {fileID: 6521469242032290692, guid: 38b134de69052ea4ea97085418e6bf2a, type: 3}
+  rows: 5
+  TopRowCount: 3
 --- !u!1001 &862446153
 PrefabInstance:
   m_ObjectHideFlags: 0
