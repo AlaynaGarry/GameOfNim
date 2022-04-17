@@ -23,10 +23,4 @@ public class UIController : MonoBehaviour
         menu.SetActive(true);
         activeMenu = menu;
     }
-
-    public void exitApplication()
-    {
-        Debug.Log("quit");
-        Application.Quit();
-    }
 }
