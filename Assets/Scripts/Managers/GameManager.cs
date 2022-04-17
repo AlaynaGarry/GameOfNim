@@ -29,8 +29,8 @@ public class GameManager : Singleton<GameManager>
     public string pTwoName { get; set; }
     public bool whosTurn { get; set; } // false = Player One : true = Player Two
 
-    private int rows;
-    private int topRowCount = 3;
+    private static  int rows;
+    private static int topRowCount = 3;
 
 
     public State state = State.TITLE;
@@ -96,11 +96,11 @@ public class GameManager : Singleton<GameManager>
         Tree.activeRow = null;
     }
 
-    public void ChangeDifficulty(int rows, int topRowCount)
+    public static void ChangeDifficulty(int inRows, int inTopRowCount)
     {
-        this.rows = rows;
-        this.topRowCount = topRowCount;
-        rowText.text = rows.ToString();
-        TopCountText.text = topRowCount.ToString();
+        rows = inRows;
+        topRowCount = inTopRowCount;
+        //rowText.text = rows.ToString();
+        //TopCountText.text = topRowCount.ToString();
     }
 }

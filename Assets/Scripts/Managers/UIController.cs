@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class UIController : MonoBehaviour
 {
@@ -8,8 +9,6 @@ public class UIController : MonoBehaviour
 
     public string tempDifficaly;
 
-    public string tempName1;
-    public string tempName2;
 
 
 
@@ -37,13 +36,27 @@ public class UIController : MonoBehaviour
         Debug.Log(tempDifficaly);
     }
 
-    public void setTempName1(string name)
+    public void checkDif()
     {
-        tempName1 = name;
-    }
-    public void setTempName2(string name)
-    {
-        tempName2 = name;
+        GameObject rows = GameObject.Find("RowsInput");
+        GameObject count = GameObject.Find("TopRowInput");
+        int r = int.Parse(rows.GetComponent<TMP_InputField>().text);
+        int c = int.Parse(count.GetComponent<TMP_InputField>().text);
+        GameManager.ChangeDifficulty(r, c);
+       
+
+        /*if(tempDifficaly == "easy")
+        {
+            GameManager.Instance.ChangeDifficulty(3, 1);
+        }
+        else if(tempDifficaly == "Medium")
+        {
+            GameManager.Instance.ChangeDifficulty(5, 1);
+        }
+        else if(tempDifficaly == "Hard")
+        {
+            GameManager.Instance.ChangeDifficulty(9, 1);
+        }*/
     }
 
 
