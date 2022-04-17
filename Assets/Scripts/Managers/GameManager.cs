@@ -80,4 +80,10 @@ public class GameManager : Singleton<GameManager>
     {
         InitScene();
     }
+
+    public void EndTurn()
+    {
+        whosTurn = !whosTurn;
+        Tree.activeRow = null;
+    }
 }
