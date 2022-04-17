@@ -520,7 +520,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 150748008}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 327814453}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: ToggleMenu
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2020473414}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &150748008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -870,8 +882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fb57700c21eab54b97d64bfe6b2f797, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winUI: {fileID: 0}
-  loseUI: {fileID: 0}
+  activeMenu: {fileID: 1905572071}
 --- !u!1 &345685251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1595,7 +1606,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 416808678}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 327814453}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: OnStartScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: GameScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &416808678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2100,7 +2123,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 492078653}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 327814453}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: ToggleMenu
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1905572071}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &492078653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2775,8 +2810,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Game of Nim
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a02817e12c3678d4ebf7d05dd34c03fe, type: 2}
+  m_sharedMaterial: {fileID: 3508664337283488285, guid: a02817e12c3678d4ebf7d05dd34c03fe, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2800,7 +2835,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.6
+  m_fontSize: 45.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3106,7 +3141,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 656307622}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 327814453}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: ToggleMenu
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1905572071}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &656307622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3464,7 +3511,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 703821593}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 327814453}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: ToggleMenu
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 979224663}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &703821593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4225,7 +4284,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 913920428}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 327814453}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: OnQuit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &913920428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5591,7 +5662,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1201308192}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1201308192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6933,7 +7016,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7822989729763276804, guid: 7f9aa6646ef24014e884b62e2c8d5b63, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000009536743
+      value: 0.000020980835
       objectReference: {fileID: 0}
     - target: {fileID: 7828658337894518578, guid: 7f9aa6646ef24014e884b62e2c8d5b63, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -7639,7 +7722,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1557232262}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 327814453}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: ToggleMenu
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2020473414}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1557232262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7877,7 +7972,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1643275392}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1643275392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8483,7 +8590,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1791413478}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1791413478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9269,7 +9388,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1965748329}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 327814453}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: OnQuit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1965748329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10089,10 +10220,10 @@ MonoBehaviour:
       - m_Target: {fileID: 327814453}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: ToggleMenu
-        m_Mode: 5
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 2020473414}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: GameSetup

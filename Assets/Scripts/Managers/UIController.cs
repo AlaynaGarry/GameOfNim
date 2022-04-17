@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class UIController : MonoBehaviour
 {
-    [SerializeField] GameObject winUI;
-    [SerializeField] GameObject loseUI;
-
+    [SerializeField] GameObject activeMenu;
 
     public void OnStartScene(string sceneName)
     {
-        if (winUI) winUI.SetActive(false);
-        if (loseUI) loseUI.SetActive(false);
+
         GameManager.Instance.OnLoadScene(sceneName);
     }
 
@@ -19,4 +16,12 @@ public class UIController : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void ToggleMenu(GameObject menu)
+    {
+        activeMenu.SetActive(false);
+        menu.SetActive(true);
+        activeMenu = menu;
+    }
+
 }

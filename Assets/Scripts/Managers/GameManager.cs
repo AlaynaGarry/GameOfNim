@@ -7,6 +7,8 @@ using TMPro;
 
 public class GameManager : Singleton<GameManager>
 {
+    private string currentSceneName;
+
     public enum State
     {
         TITLE,
@@ -74,6 +76,7 @@ public class GameManager : Singleton<GameManager>
     public void OnLoadScene(string sceneName)
     {
         sceneLoader.Load(sceneName);
+        currentSceneName = sceneName;
     }
 
     void OnSceneWasLoaded(Scene current, Scene next)
