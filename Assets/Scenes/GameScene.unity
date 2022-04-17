@@ -1471,6 +1471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1193996106}
   - component: {fileID: 1193996109}
+  - component: {fileID: 1193996110}
   - component: {fileID: 1193996108}
   - component: {fileID: 1193996107}
   m_Layer: 5
@@ -1543,7 +1544,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1193996108}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1193996110}
+        m_TargetAssemblyTypeName: EndTurnButton, Assembly-CSharp
+        m_MethodName: EndTurn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1193996108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1582,6 +1595,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193996105}
   m_CullTransparentMesh: 1
+--- !u!114 &1193996110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193996105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 481f3f13e631ea840bcf4d03b9e63e9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1238630991
 GameObject:
   m_ObjectHideFlags: 0
@@ -2310,7 +2335,7 @@ MonoBehaviour:
   Board: {fileID: 1778572597}
   RowForBoard: {fileID: 6521469242032290692, guid: 38b134de69052ea4ea97085418e6bf2a, type: 3}
   rows: 5
-  TopRowCount: 3
+  topRowCount: 0
 --- !u!114 &1778572600
 MonoBehaviour:
   m_ObjectHideFlags: 0
