@@ -7,9 +7,17 @@ public class UIController : MonoBehaviour
 {
     [SerializeField] GameObject activeMenu;
 
+    [SerializeField] TMP_InputField numberOfRowsField;
+    [SerializeField] TMP_InputField topRowCountField;
+
     public string tempDifficaly;
 
-
+    public enum Dif
+    {
+        EASY = 0,
+        MEDIUM = 1,
+        HARD = 2
+    }
 
 
     public void OnStartScene(string sceneName)
@@ -30,10 +38,26 @@ public class UIController : MonoBehaviour
         activeMenu = menu;
     }
 
-    public void setTempDif(string dif)
+    public void setTempDif(int dif)
     {
-        tempDifficaly = dif;
-        Debug.Log(tempDifficaly);
+        Dif actualDif = (Dif)dif;
+        switch (actualDif)
+        {
+            case Dif.EASY:
+                numberOfRowsField.text = "3";
+                topRowCountField.text = "1";
+                break;
+            case Dif.MEDIUM:
+                numberOfRowsField.text = "4";
+                topRowCountField.text = "1";
+                break;
+            case Dif.HARD:
+                numberOfRowsField.text = "5";
+                topRowCountField.text = "3";
+                break;
+            default:
+                break;
+        }
     }
 
     public void checkDif()

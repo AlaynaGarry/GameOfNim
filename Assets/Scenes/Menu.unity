@@ -883,6 +883,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeMenu: {fileID: 1905572071}
+  numberOfRowsField: {fileID: 127949599}
+  topRowCountField: {fileID: 480653831}
   tempDifficaly: 
 --- !u!1 &345685251
 GameObject:
@@ -5679,11 +5681,11 @@ MonoBehaviour:
       - m_Target: {fileID: 327814453}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: setTempDif
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: Hard
           m_BoolArgument: 0
@@ -6769,7 +6771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3218707417900237953, guid: 7f9aa6646ef24014e884b62e2c8d5b63, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.8000001
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3218707417900237953, guid: 7f9aa6646ef24014e884b62e2c8d5b63, type: 3}
       propertyPath: m_AnchorMin.y
@@ -7989,11 +7991,11 @@ MonoBehaviour:
       - m_Target: {fileID: 327814453}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: setTempDif
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: Medium
           m_BoolArgument: 0
@@ -8607,7 +8609,7 @@ MonoBehaviour:
       - m_Target: {fileID: 327814453}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: setTempDif
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
